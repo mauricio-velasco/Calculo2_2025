@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath,multicol}
+
+\usepackage{graphics,graphicx}
+
+\headsep17mm
+\topmargin-1cm
+\hoffset -1.5cm \voffset -1cm \textwidth 17cm \oddsidemargin
+1.5cm \evensidemargin 1.5cm \textheight 22.5cm
+
+\newcommand{\coef}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array}\right)}
+
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\newcounter{cuent}
+%\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\quad}
+%\displaystyle#1\qquad}
+\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\ }
+\displaystyle#1\hfill}
+\newcommand{\cuento}{\setcounter{cuent}{0}}
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+\noindent {\bf Universidad de la Rep\'{u}blica} \hfill {\bf C\'{a}lculo 2} \\
+{\bf Facultad de Ciencias} \hfill {\bf Segundo semestre 2024} \\
+{\bf Centro de Matem\'{a}tica} 
+
+\vspace{1cm}
+
+\begin{center}
+{\bf Pr\'{a}ctico 8 }
+\end{center}
+
+\vspace{0,1cm}
+
+\begin{enumerate}
+
+\item En cada caso, encontrar los extremos absolutos de la funci\'on $f$ en el conjunto dado.
+ \be
+   \item $f(x,y)=ax+by$ en $C:$ $x^2+y^2=1$ (donde $a^2+b^2 \neq 0$). 
+   \item $f(x,y,z) = ax+by+cz$ en $S:$ $x^2+y^2+z^2 =1$ (donde $a^2+b^2+c^2
+     \neq 0$). 
+  % \item $f(x,y)= (x+2y)e^{x+y}$ en $C:$ $x^2+y^2=1$.
+   \item $f(x,y)=xy$, en $C=\{(x,y)\in \R^2:\ x+y=1\}$.
+
+\item $f(x,y)=x^2+y^2-xy$, en $C=\{(x,y)\in \R^2:\ x^2+y^2+xy=1\}$.
+
+\item $f(x,y)=xy$, en $D=\{(x,y)\in \R^2:\ 5x^2-6xy+5y^2\leq 4\}$.
+\item $f (x, y, z) = xyz$, en $S = \{(x, y, z) : x^2 + y^2 + z^2 = 1\}$. 
+  \ee
+
+\item En cada caso, hallar la distancia m\'inima al origen del conjunto dado. Cuando exista, hallar tambi\'en la distancia m\'axima. 
+\be
+\item $C:5x^2+6xy+5y^2 = 8$ en $\R^2$.
+\item  $C:(x-2)^2+(y+3)^2=1$ en $\R^2$.
+\item $S:z^2-xy=1$ en $\R^3$.
+\item $S:x^2(y+z)+2x(y^2-z^2)+2=0$ en $\R^3$.
+\ee
+
+\item En cada caso, hallar la distancia m\'axima y m\'inima de $P\in\R^3$ a la curva $C\subset\R^3$.
+\be
+\item $P=(1,-1,0)$, $C: x^2+y^2+(z-2)^2=1, x-y+2z=4$ (intersecci\'on de un plano y una esfera).   
+\item $P=(0,0,2)$, $C: z^2=x^2+y^2, 3(z-1)^2+(y-1)^2-4=0$ (intersecci\'on de un cono y un cilindro).
+\item $P=(1,1,1)$, $C:x^2+y^2-z^2=0, x^2+y^2+(z-1)^2=1$ (intersecci\'on de un cono y una esfera). 
+\ee
+
+\item En cada caso, mostrar que el conjunto $C$ es compacto, y hallar los extremos absolutos de la funci\'on $f$ en el conjunto $C$.
+\be
+\item $C= \{(x,y,z)\in \R^3:3x^2+y^2=12, x+y+z=2\}$, $f(x,y,z)=x+y+2z$.
+\item $C= \{(x,y,z)\in \R^3: 4x^2+3y^2-4z=0,y^2-z=0\}$, $f(x,y,z)=4xy+4z-1$.
+
+\item $C=\{(x,y,z)\in \R^3:z-x^2-y^2+2=0, x+y+z-1=0\}$, $f(x,y,z)=xy+xz+yz$. Hallar tambi\'en la distancia m\'axima y m\'inima de $C$ al plano $y+2z=0$.
+ 
+\ee
+
+\item Cu\'al es la cantidad m\'\i nima de cart\'on que se necesita
+  para hacer una caja de un litro?
+   
+\item Demostrar que, entre todos los pol\'\i gonos de $n$ lados
+  inscriptos en una circunferencia, el que tiene \'area m\'axima es el
+  pol\'\i gono regular. 
+  
+\item Consideremos la funci\'on $f:\R^n \times \R^n \to \R$ definida
+  mediante $f(x,y) = x\cdot y$. Hallar los
+  extremos de $f$  sujeta a $\lVert x\rVert^2 + \lVert y \rVert
+  ^2 =1$ y deducir de aqu\'\i\ la desigualdad de Cauchy-Schwarz.    
+
+\end{enumerate}
+
+
+\end{document}

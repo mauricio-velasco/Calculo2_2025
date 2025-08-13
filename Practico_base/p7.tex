@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath,multicol}
+
+\usepackage{graphics,graphicx}
+
+\headsep17mm
+\topmargin-1cm
+\hoffset -1.5cm \voffset -1cm \textwidth 17cm \oddsidemargin
+1.5cm \evensidemargin 1.5cm \textheight 22.5cm
+
+\newcommand{\coef}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array}\right)}
+
+\newcounter{cuent}
+%\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\quad}
+%\displaystyle#1\qquad}
+\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\ }
+\displaystyle#1\hfill}
+\newcommand{\cuento}{\setcounter{cuent}{0}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\DeclareMathOperator{\sh}{sh}
+\newcommand{\depa}[2]{\ensuremath{\frac{\partial {#1}}{\partial {#2}} }} 
+
+\begin{document}
+
+\noindent {\bf Universidad de la Rep\'{u}blica} \hfill {\bf C\'{a}lculo 2} \\
+{\bf Facultad de Ciencias} \hfill {\bf Segundo semestre 2024} \\
+{\bf Centro de Matem\'{a}tica} 
+
+\vspace{1cm}
+
+\begin{center}
+{\bf Pr\'{a}ctico 7 }
+\end{center}
+
+\vspace{0,1cm}
+
+\begin{enumerate}
+
+\item Probar que las siguientes ecuaciones determinan a $y$ en función de $x$ alrededor de $(x_0, y_0)$, como $y=\phi(x)$. 
+Hallar $\phi'(x_0)$ y $\phi''(x_0)$, y determinar el polinomio de Taylor de segundo orden de $\phi$ alrededor de $x_0$.
+
+\begin{enumerate}
+
+\item $x^2-3xy+y^3-7=0$, $(x_0,y_0)=(4,3)$.
+
+\item $x^2y + \log(xy)=1$ , $(x_0,y_0) = (1, 1)$.
+
+\item $\ln(x^2+y^2)+\arctg(\frac{y}{x})=0$, $(x_0,y_0)=(1,0)$.
+ 
+\item $\frac{x}{y}-\sen(\frac{\pi xy}{2})=0$, $(x_0,y_0)=(1,1)$. 
+
+\item $x+\sh x-\sen y=0$, con $(x_0,y_0)=(0,0)$.
+ 
+\end{enumerate}
+
+\item Demostrar que la ecuaci\'on $e^y+y=e^{-2x}-x$
+  determina una \'unica funci\'on $y=f(x)$ definida para todo $x$
+  real. Hallar $f'(0)$, $f''(0)$ y $f'''(0)$. 
+  
+\item Estudiar las funciones $y(x)$ definidas por las ecuaciones
+  impl\'\i citas  $F(x,y)=c,$ donde $F(x,y)=(x^2+y^2)^2-2x^2+2y^2$. La
+  curva de nivel para $c=0$ se conoce como \textit{lemniscata de
+  Bernoulli}. Encontrar el conjunto de los puntos en los que
+$\depa{F}{y}=0$, es decir, aquellos en los que no se puede aplicar el
+teorema de la funci\'on impl\'\i cita. Hallar tambi\'en el conjunto de los $(x,y(x))$ tales que $y'(x)=0$, y reconocerlo geom\'etricamente.  
+
+\item Probar que las siguientes ecuaciones determinan $z=\phi(x,y)$  alrededor de $(x_0, y_0, z_0)$. Determinar el polinomio de Taylor de primer orden de $\phi$ alrededor de $(x_0,y_0)$.
+\begin{enumerate}
+\item $xz+x\arctg(z) + z\sen(2x + y)=1$, $(x_0, y_0, z_0)=(0,\frac{\pi}{2},1)$.
+\item $(x^2+y^2+2z^2)^{\frac{1}{2}}=x\sen(z)$, $(x_0, y_0, z_0)=(1,0,0)$.
+\end{enumerate}
+
+\item Sea $f:\R^3\to\R$ tal que $f(x,y,z)=axz+x\arctan
+  z+z\sen(2x+y)-1$, con $a\in\R$. 
+  \be\item Probar que la ecuaci\'on $f(x,y,z)=0$ determina a
+  $z=g(x,y)$ alrededor de $(0,\pi/2,1)$. 
+     \item Hallar $a$ para que $(0,\pi/2)$ sea un punto cr\'\i tico de
+       $g$. 
+     \item Calcular $\lim_{(x,y)\to(0,\pi/2)}
+           \dfrac{g(x,y)-1-3/2x^2-2x(y-\pi/2)}{x^2+(y-\pi/2)^2}$. 
+  \ee
+
+\item Sean $A\subseteq\R^2$ un subconjunto abierto, y $f:A\to\R$ una
+  funci\'on que no se anula en $A$, y tal que
+  $(x^2+y^2)f(x,y)+(f(x,y)^3)=1$, $\forall (x,y)\in A$. Probar que $f$
+  es de clase $C^\infty$.   
+  
+\item  Se define $f:\R^2\to\R^2$ por $f(x,y)=\big(x\cos y, \sen(x-y)\big)$. 
+Probar que $f$ es localmente invertible alrededor de $\left(\frac\pi 2,\frac\pi 2\right)$ y calcular la matriz Jacobiana de la inversa local en $(0,0)$.
+
+\item \be\item Sea $f:\R^2\to\R$ una funci\'on de clase $C^1$. Probar
+  que $f$ no es inyectiva.
+  
+ %(Indicaci\'on: si, por ejemplo, $\depa{f}{x}(a)\neq 0$ para todo $a$ en cierto abierto $A$, considere $g:A\to\R^2$ tal que $g(x,y):=(f(x,y),y)$ ).
+  
+         \item (Opcional) Generalice este resultado al caso de una
+           funci\'on de clase $C^1$ $f:\R^n\to \R^m$ con $m<n$. 
+      \ee
+\end{enumerate}
+\end{document}

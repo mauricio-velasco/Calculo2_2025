@@ -1,0 +1,176 @@
+\documentclass[11pt]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath,multicol}
+
+\usepackage{graphics,graphicx}
+
+\headsep17mm
+\topmargin-1cm
+\hoffset -1.5cm \voffset -1cm \textwidth 17cm \oddsidemargin
+1.5cm \evensidemargin 1.5cm \textheight 22.5cm
+
+\newcommand{\coef}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array}\right)}
+
+\newcounter{cuent}
+%\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\quad}
+%\displaystyle#1\qquad}
+\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\ }
+\displaystyle#1\hfill}
+\newcommand{\cuento}{\setcounter{cuent}{0}}
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+\noindent {\bf Universidad de la Rep\'{u}blica} \hfill {\bf C\'{a}lculo 2} \\
+{\bf Facultad de Ciencias} \hfill {\bf Segundo semestre 2024} \\
+{\bf Centro de Matem\'{a}tica} 
+
+\vspace{1cm}
+
+\begin{center}
+{\bf Pr\'{a}ctico 3 }
+\end{center}
+
+\vspace{0,1cm}
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+
+
+       \item Sean $f,g:D\subseteq\R^n\rightarrow\R$, y $a\in
+         D'$. Probar que si $\lim_{x\rightarrow a}f(x)=0$ y $g$ es una 
+         funci\'on acotada en alguna bola reducida centrada en $a$,
+         entonces $\lim_{x\to a}f(x)g(x)=0$.  
+       \item Calcular: $\displaystyle{\lim_{(x,y)\to (0,0)} x\sen
+           \frac{1}{x^2 +y^2 }}$, 
+         $\displaystyle{\lim_{(x,y)\to (0,0)}\frac{xy^{2}}{x^2
+             +y^2}}$, y 
+         $\displaystyle{\lim_{(x,y)\to (0,0)} % \qquad
+         \frac{xy^{3}}{x^2 +y^4}}.$
+      \end{enumerate}
+       
+\item\label{bonus4-1} Calcular los siguientes l\'\i mites:
+      \[ a\textrm{)}\lim_{(x,y)\to (1,2)}\frac {x^2 +xy+1}{x^2 -x-y} \quad 
+         c\textrm{)}\lim_{(x,y)\to (0,0)}xy\log|y| \quad
+         e\textrm{)}\lim_{(x,y)\to (1,1)}\frac{x^2 +xy-2y^2 }{x^2-y^2}\] 
+      \[ b\textrm{)}\lim_{(x,y)\to (0,0)}\frac{x^3 +y^3 }{x^2 +y^2} \quad 
+         d\textrm{)}\lim_{(x,y)\to (0,0)}\frac{e^{x-y}-1 }{x^2 -y^2} \quad
+         f\textrm{)}\lim_{(x,y)\to (0,0)}\frac{\log(1+x^2 +y^2) }{x^2 +y^2 +
+           x^{3}y}\] 
+\item Probar que en los siguientes casos no existe el
+      $\lim_{(x,y)\rightarrow (0,0)} f(x,y)$: 
+      \[ f(x,y)=\frac{x^2 -y^2}{x^2 +y^2} \qquad
+      f(x,y)=\frac{2x^{3}y}{(x^{2}+y^{2})^{2}}  \qquad f(x,y)=\left\{  
+      \begin{array}{ll} \frac{xy}{x+y} & \textrm{ si }x+y\neq 0 \\ 0
+        &\textrm{ si }
+        x+y=0  \end{array} \right. \]
+
+\item \begin{enumerate}
+
+\item Probar que si $\lim_{(x,y)\rightarrow (a,b)}f(x,y)=L$ y
+      existen los l\'\i mites unidimensionales   
+      $\lim_{x\rightarrow a}f(x,y)$ (para cada $y$) y  \ $\lim_{y\rightarrow
+      b}f(x,y)$ (para cada $x$), entonces tambi\'en existen  los l\'\i mites iterados  
+      $\lim_{x\to a}\ \left( \lim_{y\to b}f(x,y)\right)$ y $ 
+      \lim_{y\to b}\left( \lim_{x\to a}f(x,y) \right)$, y son iguales a 
+      $L$. 
+      \item Verificar que los l\'\i mites iterados de
+      $f(x,y)=(x-y)/(x+y)$ existen en $(0,0)$ pero son distintos.
+      \item Verificar que los l\'\i mites iterados de
+      $f(x,y)=(x^{2}y^2)/(x^{2}y^{2}+(x-y)^2)$ existen y son iguales en
+      $(0,0)$ pero no existe el $\lim_{(x,y)\rightarrow
+      (0,0)}f(x,y)$.  
+      \item Se considera $f:\R^2\to\R$ definida por:
+      $ f(x,y)=\begin{cases} x\sen(1/y) &\textrm{ si } y\neq 0\\ 0 
+      &\textrm{ si }y=0.\end{cases}.$\\
+      Mostrar que el $\lim_{(x,y)\rightarrow (0,0)}f(x,y)=0$, pero un
+      l\'\i mite iterado no existe. ?`Esto contradice la parte
+      \textit{a})?  
+      \end{enumerate}
+              
+\item Dada una funci\'on $f:\R^2\rightarrow\R$, se considera el cambio de
+      variable (a {\em coordenadas polares}) $x=r\cos\theta$, $y=r\sen\theta$, con
+      $\theta\in[0,2\pi)$, $r\geq 0$, y obtenemos $f(x,y)=g(r,\theta)$,
+      $g:[0,\infty)\times[0,2\pi)\to\R$.  
+      \begin{enumerate}
+      \item Aplicar dicho cambio de variable para calcular:
+      
+      $ \lim_{(x,y)\rightarrow (0,0)}\frac{x^{2}y}{x^2 +y^2 }$ \quad y \quad 
+        $\lim_{(x,y)\rightarrow (0,0)}\frac{xy}{\sqrt{x^2 +y^2}
+        }$.
+      \item ?`Es cierto que si $\lim_{r\to0}g(r,\theta)=0$ para todo $\theta\in [0,2\pi)$, entonces $\lim_{(x,y)\rightarrow (0,0)}f(x,y)=0$? Seg\'un corresponda, demostrar o dar un contraejemplo.
+      \end{enumerate}
+
+\item \label{bonus4-2}Sean $f:A\subseteq\R^n \longrightarrow \R^m$,
+      $a$ punto de acumulaci\'on de $A$, $g: B\to\R^p$, $b$ de
+      acumulaci\'on de $B$ con   
+      $f(A)\subset B\subset\R^m$. Supongamos que $ \lim_{x\to
+      a}f(x)=b$, $\lim_{y\to b}g(y)=c.$ 
+      ?`Qu\'e  se puede decir acerca de $\lim_{x\to
+      a}g\big(f(x)\big)$? Discutir el asunto y justificar la
+      respuesta.         
+       
+      
+\item En los siguientes casos, hallar el conjunto de los puntos en los que $f$ es continua:
+
+a) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+\frac{x^{2}y^{3}}{x^{2}+y^{2}} & \text{si} & (x,y)\neq \left( 0,0\right)  \\ 
+1 & \text{si} & \left( x,y\right) =\left( 0,0\right) 
+\end{array}%
+\right. $ b) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+\frac{x^{2}y^{3}}{x^{2}+y^{2}} & \text{si} & (x,y)\neq \left( 0,0\right)  \\ 
+0 & \text{si} & \left( x,y\right) =\left( 0,0\right) 
+\end{array}%
+\right. $ 
+
+c) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+\frac{xy}{x^{2}+xy+y^{2}} & \text{si} & (x,y)\neq \left( 0,0\right)  \\ 
+0 & \text{si} & \left( x,y\right) =\left( 0,0\right) 
+\end{array}%
+\right. $ d) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+\frac{e^{x^{2}y}-1}{\sqrt{x^{2}+y^{2}}} & \text{si} & (x,y)\neq \left(
+0,0\right)  \\ 
+0 & \text{si} & \left( x,y\right) =\left( 0,0\right) 
+\end{array}%
+\right. $.
+
+\item  Estudiar la continuidad uniforme de las funciones siguientes en
+       los dominios dados: 
+       \begin{enumerate}
+       
+       
+       
+       \item $f(x)=\cos\big(x^2\big)$ en los intervalos $[0,2\pi]$
+                y $\R$.   
+          \item $f(x,y)=1/{(x+y^2)}$ en el cuadrado $(0,1)\times
+            (0,1)$. \end{enumerate}
+
+
+\item \begin{enumerate}
+
+ 
+     \item Probar que la composici\'on de funciones uniformemente 
+           continuas tambi\'en lo es.
+     \item Probar que si $f:D\subseteq\R^n\to\R^m$ es
+           uniformemente 
+           continua, entonces $f$ admite una extensi\'on continua
+           (\'unica) a la clausura de $D$. 
+           
+           {\bf Sugerencia:} recordar que $f$ transforma
+           sucesiones de Cauchy en sucesiones de Cauchy.
+      \end{enumerate}
+        
+
+        
+\end{enumerate}
+
+
+
+\end{document}

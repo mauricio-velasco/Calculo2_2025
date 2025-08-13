@@ -1,0 +1,144 @@
+\documentclass[11pt]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath,multicol}
+
+\usepackage{graphics,graphicx}
+
+\headsep17mm
+\topmargin-1cm
+\hoffset -1.5cm \voffset -1cm \textwidth 17cm \oddsidemargin
+1.5cm \evensidemargin 1.5cm \textheight 22.5cm
+
+\newcommand{\coef}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array}\right)}
+
+\newcounter{cuent}
+%\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\quad}
+%\displaystyle#1\qquad}
+\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\ }
+\displaystyle#1\hfill}
+\newcommand{\cuento}{\setcounter{cuent}{0}}
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+\noindent {\bf Universidad de la Rep\'{u}blica} \hfill {\bf C\'{a}lculo 2} \\
+{\bf Facultad de Ciencias} \hfill {\bf Segundo semestre 2024} \\
+{\bf Centro de Matem\'{a}tica} 
+
+\vspace{1cm}
+
+\begin{center}
+{\bf Pr\'{a}ctico 2 }
+\end{center}
+
+\vspace{0,1cm}
+
+\begin{enumerate}
+
+\item Para las siguientes funciones hallar el dominio m\'as grande posible, determinar el conjunto im\'agen (asuma para esto el Teorema de Bolzano para este contexto), y 
+hallar las curvas de nivel, intentando bosquejar o reconocer geom\'etricamente:\\
+
+$\proba{f(x,y)=e^{\sqrt{x-y}}} \proba{\ln \left(\frac{1}{x^2-y^2+1}\right)} \proba{\sen(x^2+y^2)}$\\
+$\proba{f(x,y)=\cos(y)+x} \proba{f(x,y)=\sqrt{x^2+y^2}\mbox{ si }x^2+y^2\geq 1,\ \frac{1}{x^2+y^2}\mbox{ si }x^2+y^2\leq 1}$\\
+$\proba{f(x,y)=\arctg(\ln(x)+2y)} \proba{f(x,y)=e^{\cos(x)+y}} \proba{\frac{1}{y^2+\ln(x)}}$
+
+\cuento
+
+\vspace{0,4cm}
+
+\item Para las siguientes funciones hallar dominio m\'aximo, el conjunto im\'agen y los conjuntos de nivel:
+
+
+a) $f(x,y,z)=2x+y-3z$, \ \ b) $f(x,y,z)=x^2-y^2+z^2$, \ \ c) $f(x,y,z)=e^{x+y}-z$ \\
+d) $f(x,y,z)= x\cos(y)$, \ \ e) $f(x_1,\dots,x_n)=x_1+\dots+x_n$ \ \ f) $f(x_1,\dots,x_n)=x_1^2+\dots+x_n^2$.  
+
+\item Estudiar la convergencia de las siguientes sucesiones definidas en $\R^2$, y hallar sus {\em puntos de aglomeraci\'on} (los l\'imites de las subsucesiones convergentes).
+       
+      \begin{flushleft}$\begin{array}{lll}
+       a)\ x_{n}=\big(e^{-n},{3\over n} \big). &\hspace{4ex}&d)\
+       \big(n\sen\dfrac{1}{n},\sqrt{n+1}-\sqrt{n}\big). 
+        \\
+       b)\ x_{n}=\left( e^{-n}+2,[1+(-1)^{n}]n \right).&&e)\ (\cos
+       n,\cos n). \\
+       c)\ x_{n}=\big( (-1)^{n},(-1)^{n}+{1\over n} \big).&&f)\ (\cos
+       n,\sen n). \\
+       \end{array}$\end{flushleft}
+{\bf Sugerencia:} Para los dos \'ultimos, probar primero que el conjunto $\{n+2k\pi:n,k\in\mathbb{Z}\}$ es denso en $\R$.
+
+
+\item En cada      uno de los 
+      casos siguientes, sea $S$ el conjunto de todos los puntos
+      $(x,y)$ del plano que satisfacen las desigualdades dadas. Hacer
+      un gr\'afico mostrando el conjunto $S$ y explicar si $S$ es o no abierto. Indicar la frontera
+      de $S$ en el gr\'afico.
+      \begin{flushleft}$  
+      \begin{array}{lll}
+      a)\ x^2+y^2<1. &\hspace{12ex} & h)\ 1\leq x\leq 2 \ \ \textrm{ y
+      }\ \  3<y<4.\\ 
+      b)\ 3x^2+2y^2<6.& & i)\ 1<x<2 \ \ \textrm{ y }\ \  y>0.\\
+      c)\ |x|<1\ \ \textrm{ y }\ \ |y|<1.& & j)\ x\geq y.\\
+      d)\ x\geq 0\ \ \textrm{ y }\ \ y>0.& & k)\ x>y.\\
+      e)\ |x|\leq 1\ \ \textrm{ y }\ \ |y|\leq 1.& & l)\ y>x^2\ \
+        \textrm{ y }\ \ |x|<2.\\ 
+      f)\ x>0\ \ \textrm{ y }\ \ y<0.& & m)\ (x^2+y^2-1)(4-x^2-y^2)>0.\\
+      g)\ xy<1.& & n)\ (2x-x^2-y^2)(x^2+y^2-x)>0.\\
+      \end{array}$\end{flushleft}
+
+\newpage
+\item  Se definen los siguientes conjuntos:
+       \begin{itemize}
+         \item[] $A_1=\{(x,y)\in \R^{2} \colon 1\leq x \leq 2 , 1<y<3 \}$ 
+         \item[] $A_2 =\{(x,y)\in \R^{2} \colon 1\leq x \leq 2 , y>0 \}$ 
+         \item[] $A_3 =\{(x,y)\in \R^{2} \colon y=x^2 \}$  
+         \item[] $A_4 =\{(x,y)\in \R^{2} \colon x^2 +y^2 <1,(x,y)\neq
+           (0,0) \}$  
+         \item[] $A_5 =\{(x,y)\in \R^{2} \colon 2x^2 +y^2 <1 \} \cup
+           \{ (x,y)\in \R^2 \colon x=y \}$  
+         \item[] $A_6 =\{(x,y)\in \R^{2} \colon x=(-1)^n +\frac{1}{n},
+           y=1 , n\geq 1 \}$  
+         \item[] $A_7 =\{(x,0)\in \R^{2} \colon x=(-1)^n + e^{-n}
+           ,n\geq 1 \} \cup \{(-1,0)\}\cup \{A_1\cap \mathbb{Q}^2 \}$  
+         \item[] $A_8 =\{(x,y,z)\in \R^{3} \colon x+y+z<1,x>0,y>0,z>0
+           \}$  
+         \item[] $A_9 =\{(x,y,z)\in \R^{3} \colon x^2 +y^2 +1\leq z \}$ 
+       \end{itemize}
+       \begin{enumerate}
+         \item Representarlos gr\'aficamente.
+         \item Hallar el interior, la frontera y la clausura de cada uno de ellos. Hallar el conjunto de sus puntos de acumulaci\'on.
+         \item Indicar si son abiertos, cerrados, acotados, compactos, y/o conexos. 
+         
+       \end{enumerate}
+
+\item Probar los siguientes resultados.
+       \begin{enumerate}
+         \item Si $A$ es un conjunto abierto y $x\in A$ entonces
+           $A\setminus\{ x\}$ es abierto.
+         \item $A$ es abierto sii $A\cap\partial A=\phi$.
+         \item $\stackrel{\circ}{A}=\bar{A}\setminus\partial A$ es un conjunto
+           abierto, m\'as a\'un, es la uni\'on de los subconjuntos
+           abiertos contenidos en $A$ (es el conjunto abierto incluido
+           en $A$ m\'as grande).
+         \item $A$ es cerrado sii $\partial A\subset A$ sii $A' \subset
+           A$. 
+         \item $\bar{A}=A\cup\partial A$ es un conjunto cerrado, m\'as
+           a\'un, es la intersecci\'on de todos los conjuntos cerrados
+           que contienen a $A$ (es el cerrado que contiene a $A$ m\'as
+           chico).
+         \item $A'$ es un conjunto cerrado.
+       \end{enumerate}
+       
+\item Probar que si $K$ es compacto y
+      $\mathcal{A}=(A_\lambda)_{\lambda\in\Lambda}$ es un cubrimiento
+      abierto de 
+      $K$, entonces existe $\delta>0$ tal que para cada $x\in K$ se tiene
+      que $B(x,\delta)\subseteq A_\lambda$, para alg\'un
+      $\lambda\in\Lambda$  (un tal n\'umero $\delta$ se llama n\'umero
+      de Lebesgue para el cubrimiento $\mathcal{A}$).        
+
+\end{enumerate}
+
+
+
+\end{document}

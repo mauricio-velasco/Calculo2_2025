@@ -1,0 +1,173 @@
+\documentclass[11pt]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath,multicol}
+
+\usepackage{graphics,graphicx}
+
+\headsep17mm
+\topmargin-1cm
+\hoffset -1.5cm \voffset -1cm \textwidth 17cm \oddsidemargin
+1.5cm \evensidemargin 1.5cm \textheight 22.5cm
+
+\newcommand{\coef}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array}\right)}
+
+\newcounter{cuent}
+%\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\quad}
+%\displaystyle#1\qquad}
+\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\ }
+\displaystyle#1\hfill}
+\newcommand{\cuento}{\setcounter{cuent}{0}}
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+\noindent {\bf Universidad de la Rep\'{u}blica} \hfill {\bf C\'{a}lculo 2} \\
+{\bf Facultad de Ciencias} \hfill {\bf Segundo semestre 2024} \\
+{\bf Centro de Matem\'{a}tica} 
+
+\vspace{1cm}
+
+\begin{center}
+{\bf Pr\'{a}ctico 4 }
+\end{center}
+
+\vspace{0,1cm}
+
+\begin{enumerate}
+
+ \item Hallar las derivadas parciales de las siguientes funciones (en el dominio m\'aximo donde est\'an definidas):
+   \[\begin{array}{llll}
+    f(x,y)=x^2+y^2\sen(xy)&f(x,y)=\sqrt{x^2+y^2}
+                                   &f(x,y)=\frac{x}{\sqrt{x^2+y^2}}\\   
+    f(x,y)=\frac{x+y}{x-y},\ x\neq y&f(x,y)=\frac{\cos(x^2)}{y},
+                           y\neq 0&f(x)=a\cdot x,\ a\in\R^n\textrm{
+                             fijo} \\ 
+    f(x,y,z)=x^y    &f(x,y,z)=z   &f(x,y)=\sen(x\sen y)\\ 
+    f(x,y,z)=\sen(x\sen(y\sen z))&f(x,y,z)=x{y^z}&f(x,y,z)=x^{y+z}\\
+    f(x,y,z)=(x+y)^z    &f(x,y,z)=\sen(xy)&f(x,y)=[\sen(xy)]^{\cos
+      3}\\ 
+    \end{array}\]
+    
+\item Estudiar la continuidad y la existencia de las derivadas
+  parciales en el origen de las siguientes funciones:
+\[ f(x,y)= \left\{ \begin{array}{ll}
+ \frac{xy}{x^2+y^2} & si\ (x,y)\neq (0,0)\\ 
+ 0 & si\ (x,y)=(0,0) \end{array} \right.;\quad
+ f(x,y)= \left\{ \begin{array}{ll}
+ (x+y)\sen\left(\frac{1}{x+y}\right) & si\ x+y\neq 0\\ 
+ 0 & si\ x+y=0 \end{array} \right. \]
+ 
+\item Calcular, si es que existen, las derivadas direccionales de las siguientes funciones
+  escalares en los puntos y direcciones que se indican:\begin{enumerate}
+ \item $f(x,y,z)=x^2+2y^2+3z^2$ en $(1,1,0)$ en la direcci\'on $v=(1,-1,2)$.
+ \item $f(x,y)=\sin \left( \sqrt{x^{2}+y^{2}}\right) $ en $(0,0)$ para toda $v=(a,b)\neq(0,0)$.
+ \item  $f(x,y)=e^{2x+y}-1$ en $(0,0)$ para toda $v=(a,b)\neq(0,0)$.
+\item $f(x,y)=\sqrt[3]{x^{3}+y^{3}}$ en $(0,0)$ para toda $v=(a,b)\neq(0,0)$, y en $(1,-1)$ para $v=(1,1)$. 
+
+\end{enumerate}
+  
+   
+\item Para cada una de las siguientes funciones $f:\R^2\to \R$,
+  estudiar la continuidad y la existencia de las derivadas
+  direccionales (en particular de las derivadas parciales) en los
+  puntos que se indican: 
+\[\begin{array}{l}
+   f(x,y)=\begin{cases}
+              \frac{e^{xy}-1}{x} & \textrm{ si }\ x\neq 0\\ 
+              y &\textrm{ si }\ x=0 
+          \end{cases} 
+              \qquad \textrm{ en }\ (0,y_0), \textrm{ con }y_0 \in
+              \R\\  
+   f(x,y)=\begin{cases}
+              xy\sen(1/x)\cos(1/y) &\textrm{ si }xy\neq 0 \\ 
+              0 &\textrm{ si }xy=0
+          \end{cases} \textrm{\qquad en los ejes coordenados.}\\
+   f(x,y)=\begin{cases}
+              x^3    &\textrm{ si } y\geq 1 \\ 
+              x^2y^2 &\textrm{ si } y <1 
+          \end{cases} \textrm{\qquad en } (x_0,1):x_0\in \R.
+   \end{array}\]  
+   
+\item Sea $v(r,t):=t^ke^{-r^2/(4t)}$. Hallar el valor de la constante $k$ tal que $v$ satisfaga la siguiente ecuaci\'on: 
+      \[\frac{\partial v}{\partial
+        t}=\frac{1}{r^2}\frac{\partial}{\partial
+        r}\Big(r^2\frac{\partial v}{\partial r}\Big)\]    
+        
+\item Estudiar la diferenciabilidad de las siguientes funciones en los puntos
+indicados:
+
+a) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+\frac{x^{2}y^{3}}{x^{2}+y^{2}} & \text{si} & \left( x,y\right) \neq \left(
+0,0\right)  \\ 
+0 & \text{si} & \left( x,y\right) =\left( 0,0\right) 
+\end{array}%
+\right. $ en $\left( 0,0\right) $ 
+
+b) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+2x-y & \text{si} & xy\neq 0 \\ 
+x+y & \text{si} & xy=0%
+\end{array}%
+\right. $ en $\left( 0,0\right) $, $\left( 1,0\right) $, $\left( 0,1\right) $
+y $\left( 1,1\right) $ 
+
+c) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+yx & \text{si} & y\leq x \\ 
+x^{2} & \text{si} & y>x%
+\end{array}%
+\right. $ en $\left( 0,0\right) $, $\left( 1,1\right) $ y $\left( 1,2\right) 
+$ 
+
+d) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+\frac{(x-y)^{2}}{\sqrt{x^{2}+y^{2}}} & \text{si} & \left( x,y\right) \neq
+\left( 0,0\right)  \\ 
+0 & \text{si} & \left( x,y\right) =\left( 0,0\right) 
+\end{array}%
+\right. $ en $\left( 0,0\right) $  
+
+e) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+\frac{\ln \left( 1+x^{2}y\right) }{x^{2}+y^{2}} & \text{si} & \left(
+x,y\right) \neq \left( 0,0\right)  \\ 
+0 & \text{si} & \left( x,y\right) =\left( 0,0\right) 
+\end{array}%
+\right. $ en $\left( 0,0\right) $ 
+
+f) $f(x,y)=\left\{ 
+\begin{array}{ccc}
+4x^{2} & \text{si} & y=2 \\ 
+2xy & \text{si} & y\neq 2%
+\end{array}%
+\right. $ en $\left( 0,0\right) $ 
+
+g) $f(x,y)=|y-2x^{2}|$ en $(1,1)$ y $(0,0)$.
+
+\item Sea $f:\R^2\to \R$ definida por 
+      $f(x,y)= \begin{cases}
+          e^{1- x^2 - y^2} &\text{ si }||(x,y)||\geq 1\\  
+          x^2 + y^2 &\text{ si }||(x,y)|| \leq 1 \end{cases}$
+            
+      Estudiar la continuidad, la existencia de las derivadas
+      parciales, y la diferenciabilidad de $f$ en todo $\R^2$.  
+
+\item\begin{enumerate}
+
+\item Sea $f:\R^2 \to \R$ tal que $f_x(0,0) = 2$,
+          $f_y(0,0)=-1$. Sabiendo que $f$ diferenciable en el origen,
+          probar que existe y calcular $\frac{\delta f}{\delta v}
+          (0,0)$ para $v=(v_1,v_2)$ no nulo. 
+        \item Sea $f:\R^2 \to \R$ tal que $f(x,x)=x$ y $f(0,y)=0\
+          \forall x,y\in \R$ con $f$ diferenciable en el
+          origen. Calcular $f_x(0,0)$.  
+    \end{enumerate}         
+        
+\end{enumerate}
+
+
+
+\end{document}
