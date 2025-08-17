@@ -20,6 +20,7 @@
 \displaystyle#1\hfill}
 \newcommand{\cuento}{\setcounter{cuent}{0}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\RR}{\mathbb{R}}
 
 \begin{document}
 
@@ -30,7 +31,7 @@
 \vspace{1cm}
 
 \begin{center}
-{\bf Pr\'{a}ctico [P1]` }
+{\bf Pr\'{a}ctico [P1] }
 \end{center}
 
 \vspace{0,1cm}
@@ -125,6 +126,23 @@ Encuentre dicho plano para $v=(1,-1,0)$. Muestre que dados dos vectores $v$ y $v
 
 \item Encuentre una fórmula para medir la distancia entre un el hiperplano $a_1x_1+\dots+a_nx_n=b$ y el vector $v=(v_1,\dots, v_n)$ en $\mathbb{R}^n$.
 
+\item (\emph{Las $p$-normas en $\RR^n$} ) Para un real $p\geq 1$ defina la función 
+$\|\bullet\|_p: \RR^n\rightarrow \RR$ dada por \[\|x\|_p:=\left(\sum_{i=1}^n |x_i|^p\right)^{\frac{1}{p}}.\]
+\begin{enumerate}
+\item Demuestre que $\|\bullet\|_p$ es una norma en $\RR^n$ para todo valor de $p\geq 1$.
+\item Para $n=2$ y $p=1,2,3,20$ dibuje la bola unitaria de la norma $p$, es decir el conjunto
+\[\{(x,y)\in \RR^2: \|(x,y)\|_p\leq 1\}\]
+
+\item Demuestre que $\lim_{p\rightarrow \infty}\|x\|_p=\max_{i=1,2,\dots,n}|x_i|$.
+
+\item Para $n=3$ y $p=1,\infty$ dibuje la bola unitaria de la norma $p$, es decir el conjunto
+\[\{(x,y,z)\in \RR^3: \|(x,y)\|_p\leq 1\}\]
+
+\item Demuestre que para la norma euclídea se cumple que $b(x,y):=(\|x+y\|_2-\|x\|_2-\|y\|_2)/2$ es una función bilineal simétrica. 
+
+\item Demuestre que  $b_p(x,y):=(\|x+y\|_p-\|x\|_p-\|y\|_p)/2$ es bilineal simétrica si y solo si $p=2$.
+\end{enumerate}
+
 
 \item  Para una matrix $A \in \mathbb{R}^{m \times n}$ la norma de Frobenius se define como 
 \[
@@ -139,8 +157,7 @@ Encuentre dicho plano para $v=(1,-1,0)$. Muestre que dados dos vectores $v$ y $v
 \]
 Para cualquier par  \( U \in \mathbb{R}^{m \times m} \), \( V \in \mathbb{R}^{n \times n} \) de matrices ortogonales, es decir que satisfacen las ecuaciones \( U^\top U = I_m \) y \( V^\top V = I_n \).
 
-\item Que relación hay entre los valores singulares de $A$ y su norma de Frobenius? Demuestre su respuesta.
-
+\item Calcule la norma de Frobenius de una matriz de permutación.
 
 \end{enumerate}
 
