@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath,multicol}
+
+\usepackage{graphics,graphicx}
+
+\headsep17mm
+\topmargin-1cm
+\hoffset -1.5cm \voffset -1cm \textwidth 17cm \oddsidemargin
+1.5cm \evensidemargin 1.5cm \textheight 22.5cm
+
+\newcommand{\coef}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array}\right)}
+
+\newcounter{cuent}
+%\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\quad}
+%\displaystyle#1\qquad}
+\newcommand{\proba}[1]{\stepcounter{cuent}{\alph{cuent})\ }
+\displaystyle#1\hfill}
+\newcommand{\cuento}{\setcounter{cuent}{0}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\begin{document}
+
+\noindent {\bf Universidad de la Rep\'{u}blica} \hfill {\bf C\'{a}lculo 2} \\
+{\bf Facultad de Ciencias} 
+{\bf Centro de Matem\'{a}tica} 
+
+\vspace{1cm}
+
+\begin{center}
+{\bf Pr\'{a}ctico 6A [P6A]}
+\end{center}
+
+\vspace{0,1cm}
+
+\begin{enumerate}
+
+
+
+\item Para las siguientes funciones calcular los polinomios de Taylor de órdenes 1 y 2 en el punto indicado. 
+a) $f(x,y)=\sen(x)\sen(y)$ en $(0,0)$ \ \ \  b) $f(x,y)=\sqrt{5x+2y}$ en $(1,1)$ \ \ \  c) $f(x,y)=e^{x^2+y(y+1)}$ en $(0,0)$ 
+
+\item Para las siguientes funciones calcular los polinomios de Taylor de órden $n$ (arbitrario) en el punto indicado.
+
+a) $f(x,y,z)=xyz$ en $(1,-1,0)$ \ \ \ b) $f(x,y)=e^{x+y}$ en
+  $(0,0)$ y $(1,0)$.
+
+\item Calcular los siguientes l\'imites:
+
+a) $\underset{\left( x,y\right) \rightarrow \left( 0,0\right) }{\lim}\frac{xy-\sen(x)\sen(y)}{x^2+y^2}$\ \ 
+b) $\underset{\left( x,y\right) \rightarrow \left( 0,0\right) }{\lim}\frac{e^{x^2+y(y+1)}-(1 + y)}{x^2+y^2}$.
+
+  
+  \item Si $\mathbf{r_1}$ y $\mathbf{r_2}$ son las distancias desde un
+  punto $(x,y)$ de una elipse a sus focos, demostrar que la ecuaci\'on
+  $\mathbf{r}_1+\mathbf{r}_2=$constante (que satisfacen esas
+  distancias, y que es la definición de elipse) implica la relaci\'on
+  $T\cdot\nabla(\mathbf{r}_1+\mathbf{r}_2)=0$, siendo $T$ el vector
+  unitario tangente a la elipse en $(x,y)$. Interpretar geom\'etricamente este
+  resultado, y con ello demostrar que la tangente forma \'angulos
+  iguales con las rectas que unen $(x,y)$ a los focos. 
+\end{enumerate}
+\end{document}
